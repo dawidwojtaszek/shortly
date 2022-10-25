@@ -1,0 +1,38 @@
+.btn{
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background-color: $cyan;
+    padding:12px 24px;
+    border: none;
+    border-radius: 20px;
+    &:hover{
+        background-color: #98e3e6;
+    }
+}
+.container{
+    max-width: $container-size;
+    margin:auto;
+    @media(max-width:$container-size){
+        padding: 0 24px 0 24px;
+    }
+}
+.hidden{
+    @media(max-width:900px){
+        display: none !important;
+    }
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding:5px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    color:$grayish-violet;
+    @media(max-width:900px){
+        display: block;
+    }
+}
