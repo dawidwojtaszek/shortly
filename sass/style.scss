@@ -322,6 +322,12 @@ header{
     & .card-body{
         color:$grayish-violet;
         font-size: 0.85rem;
+        @media(max-width:1000px) {
+            font-size: 0.7rem;
+        }
+        @media(max-width:900px) {
+            font-size: 0.85rem;
+        }
     }
 
 }

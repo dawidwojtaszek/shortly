@@ -425,6 +425,16 @@ header .header-container .navigation-position {
   color: hsl(257deg, 7%, 63%);
   font-size: 0.85rem;
 }
+@media (max-width: 1000px) {
+  .card .card-body {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 900px) {
+  .card .card-body {
+    font-size: 0.85rem;
+  }
+}
 
 .secound {
   margin-top: 45px;
