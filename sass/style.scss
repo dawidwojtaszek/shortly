@@ -346,6 +346,9 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media(max-width:900px){
+        background-image: url('../images/bg-boost-mobile.svg');
+    }
     & .boost-heading{
         font-size: 3rem;
         color:#fff;

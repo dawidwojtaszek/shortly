@@ -454,6 +454,11 @@ header .header-container .navigation-position {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 900px) {
+  .boost-section {
+    background-image: url("../images/bg-boost-mobile.svg");
+  }
+}
 .boost-section .boost-heading {
   font-size: 3rem;
   color: #fff;

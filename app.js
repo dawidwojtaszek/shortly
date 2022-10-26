@@ -8,6 +8,10 @@ const app = () => {
 
   const hamburger = document.querySelector(".hamburger");
   hamburger.addEventListener("click", handleClick);
+
+  fetch("https://api.shrtco.de/v2/shorten?url=dawidwojtaszek.pl")
+    .then((response) => response.json())
+    .then((data) => console.log(data));
 };
 
 app();
