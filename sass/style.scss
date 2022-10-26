@@ -174,7 +174,7 @@ header{
 .shorten-section{
     margin-top: 150px;
     background-color: #f0f1f6;
-    height: 168px;
+    height: 110px;
     padding:0 24px;
     
 }
@@ -231,4 +231,193 @@ header{
         }
     }
 }
+.statistics-section{
+    background-color: #f0f1f6;
+    & .statistics-header-container{
+        text-align: center;
+        margin-bottom: 110px;
+        padding-top: 100px;
+        & .section-heading{
+           font-size: 1.9rem;
+           color:$very-dark-violet; 
+           font-weight: 700;
+           @media(max-width:900px){
+            font-size: 1.5rem;
+           }
+        }
+        & .section-description{
+            color:$grayish-violet;
+            max-width: 520px;
+            font-size: 1rem;
+            margin: 20px auto;
+            @media(max-width:900px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
 
+
+    & .statistics-container{
+        position: relative;
+        margin-top: 45px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 150px;
+                left: 50px;
+                right: 50px;
+                height: 8px;
+                background-color: $cyan;
+                @media(max-width:900px){
+                    top:50px;
+                    left: calc(50% - 4px);
+                    width: 8px;
+                    height: 85%;
+                }
+            }
+        
+        & .cards-section{
+            display: flex;
+            justify-content: space-between;
+            gap:30px;
+            padding-bottom: 120px;
+            @media(max-width:900px){
+                flex-direction: column;
+            }
+        }
+    }
+}
+.card {
+    background-color: #fff;
+    padding: 35px;
+    position: relative;
+    text-align: left;
+    border-radius: 8px;
+    z-index: 1;
+    height: 270px;
+    @media(max-width:900px){
+        text-align: center;
+    }
+  
+    & .icon-box{
+        background-color: $dark-violet;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        position: absolute;
+        top:-45px;
+        left: 35px;
+        @media(max-width:900px){
+            left: calc(50% - 45px);
+        }
+    }
+    & .card-title{
+        padding-top:45px;
+        padding-bottom: 20px;
+        color:$very-dark-violet;
+    }
+    & .card-body{
+        color:$grayish-violet;
+        font-size: 0.85rem;
+    }
+
+}
+.secound{
+    margin-top: 45px;
+}
+.third{
+    margin-top: 90px;
+}
+.boost-section{
+    background-color: $dark-violet;
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-size: cover;
+    height:250px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & .boost-heading{
+        font-size: 3rem;
+        color:#fff;
+        margin-bottom: 25px;
+        @media(max-width:900px){
+            font-size: 1.5rem;
+        }
+    }
+    & .btn-boost{
+        height: 50px;
+        width: 170px;
+        font-size: 1rem;
+        border-radius: 25px;
+    }
+}
+.footer{
+    background-color: $very-dark-violet;
+    & .footer-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+        @media(max-width:900px){
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        & .footer-links-box{
+            display: flex;
+            justify-content: space-between;
+                @media(max-width:900px) {
+                    flex-direction: column;
+                    margin-top: 50px;
+                }
+
+            & .links-list{
+                color:#f0f1f6;
+                margin-right: 80px;
+                @media(max-width:900px){
+                    margin-right: 0;
+                    margin-bottom:50px;
+                }
+                & .links-title{
+                    margin-bottom:25px ;
+                    font-size: 0.8rem;
+                }
+                & .footer-links{
+                    list-style: none;
+                    & .footer-link-element{
+                        padding:8px 0;
+                        font-size: 0.8rem;
+                        & .footer-link{
+                            color:$gray;
+                            text-decoration: none;
+                            &:hover{
+                                color:$cyan;
+                            }
+                        }
+                    }
+                }
+            }
+            & .footer-social-links ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                @media(max-width:900px){
+                    
+                }
+                & .social-link{
+                    color:#fff;
+                    font-size:1.4rem;
+                    padding:0 12px;
+                    cursor: pointer;
+                    & :hover{
+                        color:$cyan;
+                    }
+                }
+            }
+        }
+    }
+}
