@@ -66,23 +66,32 @@
     <main>
       <section class="shorten-section">
         <div class="container shorten-container">
-          <div class="shorten-box">
-            <input placeholder="Shorten a link here..." class="link-input" />
-            <button class="btn submit-btn">Shorten it!</button>
-          </div>
+          <form class="shorten-box">
+            <div class="input-box">
+              <input
+                placeholder="Shorten a link here..."
+                class="link-input"
+                id="input-link"
+                type="text"
+              />
+              <span class="message"></span>
+            </div>
+            <input type="submit" class="btn submit-btn" value="Shorten it!" />
+          </form>
         </div>
       </section>
-      <div class="links-section">
-        <!-- <div class="container">
+      <section class="links-cards-section">
+        <div class="links-section">
+          <!-- <div class="container">
           <div class="shorten-card">
-            <span class="link-to-short">https://www.frontendmentor.io</span>
+            <span class="link-original">https://www.frontendmentor.io</span>
             <div class="right-section">
               <span class="short-link">https://rel.ink/k4LKyk</span>
               <button class="btn copy-btn">Copy</button>
             </div>
           </div> -->
-      </div>
-
+        </div>
+      </section>
       <section class="statistics-section">
         <div class="container statistics-header-container">
           <h2 class="section-heading">Advanced Statistics</h2>
